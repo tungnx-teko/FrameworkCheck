@@ -32,7 +32,7 @@ PODS:
   - UPCarouselFlowLayout (1.1.2)
 
 DEPENDENCIES:
-  - Alamofire (= 5.3.0)
+  - Alamofire (~> 5.3.0)
   - Cosmos (= 18.0)
   - IQKeyboardManagerSwift (= 6.5.0)
   - JVFloatLabeledTextField (= 1.1.1)
@@ -86,6 +86,6 @@ SPEC CHECKSUMS:
   Toast-Swift: e42a638589a2f95036b4bb7626cfbdde7daf0393
   UPCarouselFlowLayout: 4c7d2c43a10ebb1597bde502a53699d378341dad
 
-PODFILE CHECKSUM: 8f7a065f76ba573b21c819f78c1392cc786a5142
+PODFILE CHECKSUM: 3597f25db516c49f24da2edbd3a156c94513f725
 
 COCOAPODS: 1.10.0
