@@ -3,27 +3,54 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1A2F54BC25EF7B660058F350 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2F54BB25EF7B660058F350 /* AppDelegate.swift */; };
-		1A2F54BE25EF7B660058F350 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2F54BD25EF7B660058F350 /* SceneDelegate.swift */; };
 		1A2F54C025EF7B660058F350 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2F54BF25EF7B660058F350 /* ViewController.swift */; };
 		1A2F54C325EF7B660058F350 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A2F54C125EF7B660058F350 /* Main.storyboard */; };
 		1A2F54C525EF7B680058F350 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A2F54C425EF7B680058F350 /* Assets.xcassets */; };
 		1A2F54C825EF7B680058F350 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A2F54C625EF7B680058F350 /* LaunchScreen.storyboard */; };
+		1A2F550025EF80110058F350 /* CallAppSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A2F54FA25EF80090058F350 /* CallAppSDK.framework */; };
+		1A2F550125EF80110058F350 /* CallAppSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A2F54FA25EF80090058F350 /* CallAppSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1A2F550325EF80130058F350 /* TripiCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A2F54FB25EF80090058F350 /* TripiCommon.framework */; };
+		1A2F550425EF80130058F350 /* TripiCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A2F54FB25EF80090058F350 /* TripiCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1A2F550525EF80140058F350 /* TripiFlightKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A2F54F925EF80090058F350 /* TripiFlightKit.framework */; };
+		1A2F550625EF80140058F350 /* TripiFlightKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A2F54F925EF80090058F350 /* TripiFlightKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3C1146574063EB3CDD0514F9 /* Pods_FrameworkCheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C54387405C7BF655F2B21D /* Pods_FrameworkCheck.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1A2F550225EF80110058F350 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1A2F550425EF80130058F350 /* TripiCommon.framework in Embed Frameworks */,
+				1A2F550125EF80110058F350 /* CallAppSDK.framework in Embed Frameworks */,
+				1A2F550625EF80140058F350 /* TripiFlightKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1A2F54B825EF7B660058F350 /* FrameworkCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrameworkCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A2F54BB25EF7B660058F350 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1A2F54BD25EF7B660058F350 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1A2F54BF25EF7B660058F350 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1A2F54C225EF7B660058F350 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1A2F54C425EF7B680058F350 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A2F54C725EF7B680058F350 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A2F54C925EF7B680058F350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A2F54F925EF80090058F350 /* TripiFlightKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TripiFlightKit.framework; path = Frameworks/TripiFlightKit.framework; sourceTree = "<group>"; };
+		1A2F54FA25EF80090058F350 /* CallAppSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CallAppSDK.framework; path = Frameworks/CallAppSDK.framework; sourceTree = "<group>"; };
+		1A2F54FB25EF80090058F350 /* TripiCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TripiCommon.framework; path = Frameworks/TripiCommon.framework; sourceTree = "<group>"; };
+		3E09EC35129BE4F0CC9625C8 /* Pods-FrameworkCheck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameworkCheck.debug.xcconfig"; path = "Target Support Files/Pods-FrameworkCheck/Pods-FrameworkCheck.debug.xcconfig"; sourceTree = "<group>"; };
+		9430C10AC75C1F6D510AD311 /* Pods-FrameworkCheck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameworkCheck.release.xcconfig"; path = "Target Support Files/Pods-FrameworkCheck/Pods-FrameworkCheck.release.xcconfig"; sourceTree = "<group>"; };
+		95C54387405C7BF655F2B21D /* Pods_FrameworkCheck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrameworkCheck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +58,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C1146574063EB3CDD0514F9 /* Pods_FrameworkCheck.framework in Frameworks */,
+				1A2F550325EF80130058F350 /* TripiCommon.framework in Frameworks */,
+				1A2F550525EF80140058F350 /* TripiFlightKit.framework in Frameworks */,
+				1A2F550025EF80110058F350 /* CallAppSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02D33C64EAFB57F40408A670 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95C54387405C7BF655F2B21D /* Pods_FrameworkCheck.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1A2F54AF25EF7B660058F350 = {
 			isa = PBXGroup;
 			children = (
 				1A2F54BA25EF7B660058F350 /* FrameworkCheck */,
 				1A2F54B925EF7B660058F350 /* Products */,
+				53EB4FEC3D9A0C1F6047485C /* Pods */,
+				02D33C64EAFB57F40408A670 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,8 +97,10 @@
 		1A2F54BA25EF7B660058F350 /* FrameworkCheck */ = {
 			isa = PBXGroup;
 			children = (
+				1A2F54FA25EF80090058F350 /* CallAppSDK.framework */,
+				1A2F54FB25EF80090058F350 /* TripiCommon.framework */,
+				1A2F54F925EF80090058F350 /* TripiFlightKit.framework */,
 				1A2F54BB25EF7B660058F350 /* AppDelegate.swift */,
-				1A2F54BD25EF7B660058F350 /* SceneDelegate.swift */,
 				1A2F54BF25EF7B660058F350 /* ViewController.swift */,
 				1A2F54C125EF7B660058F350 /* Main.storyboard */,
 				1A2F54C425EF7B680058F350 /* Assets.xcassets */,
@@ -67,6 +110,15 @@
 			path = FrameworkCheck;
 			sourceTree = "<group>";
 		};
+		53EB4FEC3D9A0C1F6047485C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E09EC35129BE4F0CC9625C8 /* Pods-FrameworkCheck.debug.xcconfig */,
+				9430C10AC75C1F6D510AD311 /* Pods-FrameworkCheck.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +126,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A2F54CC25EF7B680058F350 /* Build configuration list for PBXNativeTarget "FrameworkCheck" */;
 			buildPhases = (
+				5D061CDBD82699830996C584 /* [CP] Check Pods Manifest.lock */,
 				1A2F54B425EF7B660058F350 /* Sources */,
 				1A2F54B525EF7B660058F350 /* Frameworks */,
 				1A2F54B625EF7B660058F350 /* Resources */,
+				823C36B242F031592A52B71B /* [CP] Embed Pods Frameworks */,
+				1A2F550225EF80110058F350 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +187,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5D061CDBD82699830996C584 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FrameworkCheck-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		823C36B242F031592A52B71B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FrameworkCheck/Pods-FrameworkCheck-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FrameworkCheck/Pods-FrameworkCheck-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FrameworkCheck/Pods-FrameworkCheck-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1A2F54B425EF7B660058F350 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -139,7 +236,6 @@
 			files = (
 				1A2F54C025EF7B660058F350 /* ViewController.swift in Sources */,
 				1A2F54BC25EF7B660058F350 /* AppDelegate.swift in Sources */,
-				1A2F54BE25EF7B660058F350 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,12 +379,20 @@
 		};
 		1A2F54CD25EF7B680058F350 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E09EC35129BE4F0CC9625C8 /* Pods-FrameworkCheck.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2G2F7B8D22;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FrameworkCheck",
+					"$(PROJECT_DIR)/FrameworkCheck/Frameworks",
+				);
 				INFOPLIST_FILE = FrameworkCheck/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,12 +406,20 @@
 		};
 		1A2F54CE25EF7B680058F350 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9430C10AC75C1F6D510AD311 /* Pods-FrameworkCheck.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2G2F7B8D22;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FrameworkCheck",
+					"$(PROJECT_DIR)/FrameworkCheck/Frameworks",
+				);
 				INFOPLIST_FILE = FrameworkCheck/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
